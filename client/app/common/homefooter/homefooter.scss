@@ -1,0 +1,60 @@
+.homefooter {
+  color: red;
+}
+
+/*=====================================*\
+  Footer
+\*=====================================*/
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  color: #c1c1c1;
+  font-size: 0.9em;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+body > footer {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+footer div {
+  height: 50px;
+  color: #c1c1c1;
+}
+footer div:first-child {
+  float: left;
+}
+footer div:last-child {
+  float: right;
+}
+
+footer div * {
+  display: inline-block;
+  line-height: 34px;
+  margin: 8px;
+  vertical-align: top;
+}
+
+footer div img {
+  height: 30px;
+  margin: 10px;
+}
+
+footer div:last-child a {
+  padding: 0 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #054184;
+  background: linear-gradient(90deg, #054184, #2d60a8);
+}
+
+@media only screen and (max-width: 600px) {
+   footer {
+    display: none;
+  }
+}
+

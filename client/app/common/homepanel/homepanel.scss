@@ -1,0 +1,278 @@
+.homepanel {
+    color: red;
+}
+
+
+/*=====================================*\
+  Main
+\*=====================================*/
+
+main #panel {
+    background: url("../../../../img/mountain-stars-overlay.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 70px - 50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+main #panel.baseline {
+    align-items: baseline;
+    padding: 30px 0;
+}
+
+main #panel div {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main #panel div>* {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main #menu li {
+    color: #1c2f4e;
+}
+
+
+/*=====================================*\
+  Main
+\*=====================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: calc(100% - 70px - 50px);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*/////////    Side Nav    /////////*/
+
+main>nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+main>nav li {
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+main>nav footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 80px;
+}
+
+main>nav footer * {
+    display: block;
+    line-height: 28px;
+    margin: 6px auto;
+    width: 100px;
+    opacity: 0.5;
+    vertical-align: top;
+}
+
+main>nav footer a {
+    padding: 0 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #054184;
+    background: linear-gradient(90deg, #054184, #2d60a8);
+    opacity: 1;
+}
+
+
+/*=====================================*\
+  Main
+\*=====================================*/
+
+h1 {
+    font-family: muli, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3.68em;
+    margin-top: 0;
+}
+
+h2,
+h3,
+form {
+    margin-top: 35px;
+}
+
+h2 {
+    width: 60%;
+    font-size: 1.84em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h3:last-child {
+    margin-bottom: 0;
+}
+
+form * {
+    height: 45px;
+    background: none;
+    border: none;
+    vertical-align: middle;
+}
+
+form *:focus {
+    outline: none;
+}
+
+input {
+    width: 400px;
+    margin-right: 40px;
+    padding: 0 20px;
+    border-bottom: 1.5px solid white;
+    text-align: left;
+    font-size: 1.84em;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+}
+
+button span {
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: 1.5px solid #ffffff;
+    font-size: 1.84em;
+    font-weight: 500;
+    transition: .2s;
+}
+
+button span:hover {
+    background-color: #ffffff;
+    color: #054184;
+}
+
+h3 a {
+    padding: 0 60px 0 0;
+    border-right: 1px solid white;
+    font-weight: 500;
+}
+
+h3 a:last-child {
+    padding: 0 0 0 60px;
+    border-right: none;
+}
+
+body {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    main #panel {
+        height: calc(100vh - 60px);
+    }
+}
+
+
+/*=====================================*\
+  Mobile Styles
+\*=====================================*/
+
+@media (max-width: 900px) {
+    main #panel>div {
+        width: 90%;
+    }
+    main #panel>div>* {
+        margin-top: 35px;
+    }
+    h1 {
+        font-size: 2.7em;
+    }
+    h2 {
+        width: 80%;
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    form * {
+        font-size: 1.2em;
+    }
+    input {
+        width: 300px;
+        padding: 7px;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 1.2em;
+    }
+    button span {
+        padding: 8px 12px;
+        font-weight: 700;
+        border-radius: 14px;
+    }
+    h3 a {
+        padding: 0 40px 0 0;
+    }
+    h3 a:last-child {
+        padding: 0 0 0 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    main #panel>div>* {
+        margin-top: 25px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        width: 80%;
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 0.8em;
+    }
+    form * {
+        font-size: 1em;
+        height: 40px;
+    }
+    input {
+        width: 250px;
+        padding: 7px;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+    button span {
+        padding: 6px 10px;
+        border-radius: 12px;
+        font-size: 1em;
+    }
+    h3 a {
+        padding: 0 10px 0 0;
+    }
+    h3 a:last-child {
+        padding: 0 0 0 10px;
+    }
+}
